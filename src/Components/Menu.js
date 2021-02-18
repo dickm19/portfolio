@@ -5,16 +5,16 @@ export default function Menu () {
     return(
         <>
             <div className='menu'>
-                <Link className='gooey' id='portfolio' to={"/portfolio"}>
-                    <span>Portfolio</span><span></span>
-                </Link><br/>
                 
                 <Link className='gooey' id='about' to={"/about"}>
-                    <span >About Me</span><span></span>
+                    <span >About</span>
+                </Link><br/>
+                <Link className='gooey' id='portfolio' to={"/portfolio"}>
+                    <span>Portfolio</span>
                 </Link><br/>
 
                 <Link className='gooey' id='contact' to={"/contact"}>
-                    <span >Contact Me</span><span></span>
+                    <span >Contact Me</span>
                 </Link>
             </div>
             <svg>
