@@ -1,25 +1,59 @@
-import logo from './logo.svg';
-import './App.css';
+import React from 'react'
+import Menu from './Components/Menu'
+import Portfolio from './Components/Portfolio'
+import About from './Components/About'
+import Contact from './Components/Contact'
+import Home from './Components/Home'
+import './App.scss'
+import { Route, withRouter } from 'react-router-dom';
 
-function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
+class App extends React.Component {
+  state = {
+    count: 0
+  }
+  render(){
+    
+    return (
+      <div className="App">
+        
+        <Route
+            exact
+            path="/"
+            render={()=>
+              <Home/>
+            }
+        />
+        <Route
+            exact
+            path="/menu"
+            render={()=>
+              <Menu/>
+            }
+        />
+        <Route
+            exact
+            path="/portfolio"
+            render={()=>
+              <Portfolio/>
+            }
+        />
+        <Route
+            exact
+            path="/about"
+            render={()=>
+              <About/>
+            }
+        />
+        <Route
+            exact
+            path="/contact"
+            render={()=>
+              <Contact/>
+            }
+        />
+      </div>
+    )
+  }
 }
 
-export default App;
+export default withRouter(App);
