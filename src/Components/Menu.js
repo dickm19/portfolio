@@ -1,7 +1,20 @@
 import React from 'react'
 import { Link } from 'react-router-dom'
+import './Menu.scss'
 
+// const menuBody = styled.div `
+//     background-image: linear-gradient(-200deg, rgb(218, 137, 39) 20%, #470ca7 100%);
+//     background-size: cover;
+//     position: fixed;
+//     top: 0;
+//     left: 0;
+//     right: 0;
+//     bottom: 0;
+//     width: 100%;
+//     height: 100%;
+// `
 export default function Menu () {
+  
     return(
         <>
             <div className='menu'>

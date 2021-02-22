@@ -1,0 +1,108 @@
+
+body{
+    background-image: linear-gradient(-200deg, rgb(218, 137, 39) 20%, #470ca7 100%);
+    font-family: 'Source Code Pro', monospace;
+    // text-decoration: none;
+
+}
+  
+.menu{
+    // font-family: 'Barlow', sans-serif;
+    // font-family: 'Questrial', sans-serif;
+    text-align: center;
+    margin: 0 auto;
+    margin-top: 5vh;
+  }
+  
+  
+  .gooey{
+    margin-top: 5vh;
+    width: 50vh;
+    height: 20vh;
+    position: relative;
+    display: inline-block;
+    color: rgb(46, 45, 45);
+    background-color: rgba(107, 61, 222, 0.242);
+    font-size: 8vh;
+    box-shadow: 5px 10px #4f4f4f79;
+    border-radius: 50% 50% 50% 50% / 50% 50% 50% 50%;
+    outline: 1px solid transparent;
+  }
+
+
+  .gooey:hover{
+    animation: morph 3s linear infinite; 
+    transform-style: preserve-3d;
+    will-change: border-radius;
+  
+    .gooey:before, .gooey:after {
+        content: '';
+        width: 75%;
+        height: 75%;
+        display: block;
+        position: absolute;
+        left: 19px;
+        top: 18px;
+        border-radius: 42% 58% 90% 30% / 45% 45% 55% 55%;
+        will-change: border-radius, transform, opacity;
+        animation-delay: 200ms;
+    }
+    
+    .gooey:before{
+      animation: morph 2s linear infinite;
+      opacity: .21;
+      animation-duration: 1.2s;
+    }
+    
+    .gooey:after{
+      animation: morph 2s linear infinite;
+      animation-delay: 400ms;
+      opacity: .89;
+      content: "";
+      line-height: 135px;
+      text-indent: 40px;
+    }
+  }
+  span{
+    display: inline-block;
+    margin-top: 5vh;
+  }
+  // #portfolio{
+  //   background-image: linear-gradient(-200deg, rgb(218, 137, 39) 20%, #470ca7 100%);
+  // }
+  
+  // #about{
+  //   background-image: linear-gradient(-200deg, rgb(218, 137, 39) 20%, #470ca7 100%);
+  // }
+  
+  // #contact{
+  //   background-image: linear-gradient(-200deg, rgb(250, 147, 51) 20%, #0c1cb1 100%);
+  // }
+  @keyframes morph{
+    0%,100% {
+      border-radius: 50% 50% 50% 50% / 50% 50% 50% 50%;
+      transform: translate3d(0,0,2px) rotateZ(0.01deg);
+    }
+    34% {
+      border-radius: 40% 50% 60% 54% / 60% 50% 71% 70%;
+      transform:  translate3d(0,5px,0) rotateZ(0.01deg);
+    }
+    50% {
+      transform: translate3d(0,0,0) rotateZ(0.01deg);
+    }
+    67% {
+      border-radius: 100% 60% 60% 100% / 100% 100% 60% 60% ;
+      transform: translate3d(0,-3px,0) rotateZ(0.01deg);
+    }
+  }
+  
+  @keyframes fadeIn{
+    100%{
+      transform: scale(1.03);
+      opacity: 0;
+    }
+  }
+  
+  
+  
+  
