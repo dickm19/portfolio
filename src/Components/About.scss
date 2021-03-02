@@ -1,0 +1,320 @@
+.blob1 {
+    position: absolute;
+    top: 0;
+    left: 0;
+    fill: #08316a5d;
+    width: 10vmax;
+    z-index: -1;
+    animation: move1 50s ease-in-out infinite;
+    transform-origin: 50% 50%;
+  }
+  .blob2 {
+    position: absolute;
+    top: 0;
+    left: 0;
+    fill: #08316a5d;
+    width: 10vmax;
+    z-index: -1;
+    animation: move2 35s ease-in-out infinite;
+    transform-origin: 50% 50%;
+  }
+  .blob3 {
+    position: absolute;
+    top: 0;
+    left: 0;
+    fill: #08316a5d;
+    width: 10vmax;
+    z-index: -1;
+    animation: move3 40s ease-in-out infinite;
+    transform-origin: 50% 50%;
+  }
+  .blob4 {
+    position: absolute;
+    top: 0;
+    left: 0;
+    fill: #08316a5d;
+    width: 10vmax;
+    z-index: -1;
+    animation: move4 60s ease-in-out infinite;
+    transform-origin: 50% 50%;
+  }
+  .blob5 {
+    position: absolute;
+    top: 0;
+    left: 0;
+    fill: #08316a5d;
+    width: 10vmax;
+    z-index: -1;
+    animation: move5 25s ease-in-out infinite;
+    transform-origin: 50% 50%;
+  }
+  .blob6 {
+    position: absolute;
+    top: 0;
+    left: 0;
+    fill: #08316a5d;
+    width: 10vmax;
+    z-index: -1;
+    animation: move6 30s ease-in-out infinite;
+    transform-origin: 50% 50%;
+  }
+  .blob7 {
+    position: absolute;
+    top: 0;
+    left: 0;
+    fill: #08316a5d;
+    width: 10vmax;
+    z-index: -1;
+    animation: move7 90s ease-in-out infinite;
+    transform-origin: 50% 50%;
+  }
+  .blob8 {
+    position: absolute;
+    top: 0;
+    left: 0;
+    fill: #08316a5d;
+    width: 10vmax;
+    z-index: -1;
+    animation: move8 40s ease-in-out infinite;
+    transform-origin: 50% 50%;
+  }
+  .blob9 {
+    position: absolute;
+    top: 0;
+    left: 0;
+    fill: #08316a5d;
+    width: 10vmax;
+    z-index: -1;
+    animation: move9 25s ease-in-out infinite;
+    transform-origin: 50% 50%;
+  }
+  .blob10 {
+    position: absolute;
+    top: 0;
+    left: 0;
+    fill: #08316a5d;
+    width: 10vmax;
+    z-index: -1;
+    animation: move10 35s ease-in-out infinite;
+    transform-origin: 50% 50%;
+  }
+
+  .li1{
+    position: absolute;
+    top: 0;
+    left: 0;
+    fill: #08316a5d;
+    width: 10vmax;
+    z-index: -1;
+    animation: move1 50s ease-in-out infinite;
+    transform-origin: 50% 50%;
+  }
+  .li2{
+    position: absolute;
+    top: 0;
+    left: 0;
+    fill: #08316a5d;
+    width: 10vmax;
+    z-index: -1;
+    animation: move2 35s ease-in-out infinite;
+    transform-origin: 50% 50%;
+  }
+  .li3{
+    position: absolute;
+    top: 0;
+    left: 0;
+    fill: #08316a5d;
+    width: 10vmax;
+    z-index: -1;
+    animation: move3 40s ease-in-out infinite;
+    transform-origin: 50% 50%;
+  }
+  .li4{
+    position: absolute;
+    top: 0;
+    left: 0;
+    fill: #08316a5d;
+    width: 10vmax;
+    z-index: -1;
+    animation: move4 60s ease-in-out infinite;
+    transform-origin: 50% 50%;
+  }
+  .li5{
+    position: absolute;
+    top: 0;
+    left: 0;
+    fill: #08316a5d;
+    width: 10vmax;
+    z-index: -1;
+    animation: move5 25s ease-in-out infinite;
+    transform-origin: 50% 50%;
+  }
+  .li6{
+    position: absolute;
+    top: 0;
+    left: 0;
+    fill: #08316a5d;
+    width: 10vmax;
+    z-index: -1;
+    animation: move6 30s ease-in-out infinite;
+    transform-origin: 50% 50%;
+  }
+  .li7{
+    position: absolute;
+    top: 0;
+    left: 0;
+    fill: #08316a5d;
+    width: 10vmax;
+    z-index: -1;
+    animation: move7 90s ease-in-out infinite;
+    transform-origin: 50% 50%;
+  }
+  .li8{
+    position: absolute;
+    top: 0;
+    left: 0;
+    fill: #08316a5d;
+    width: 10vmax;
+    z-index: -1;
+    animation: move8 40s ease-in-out infinite;
+    transform-origin: 50% 50%;
+  }
+  .li9{
+    position: absolute;
+    top: 0;
+    left: 0;
+    fill: #08316a5d;
+    width: 10vmax;
+    z-index: -1;
+    animation: move9 25s ease-in-out infinite;
+    transform-origin: 50% 50%;
+  }
+  .li10{
+    position: absolute;
+    top: 0;
+    left: 0;
+    fill: #08316a5d;
+    width: 10vmax;
+    z-index: -1;
+    animation: move10 35s ease-in-out infinite;
+    transform-origin: 50% 50%;
+  }
+
+  @function randomNum($min, $max) {
+    $rand: random();
+    $randomNum: $min + floor($rand * (($max - $min) + 1));
+  
+    @return $randomNum;
+  }
+  $startEndX1: randomNum(0, 100);
+  $startEndY1: randomNum(0, 100);
+
+  $startEndX2: randomNum(0, 100);
+  $startEndY2: randomNum(0, 100);
+
+  $startEndX3: randomNum(0, 100);
+  $startEndY3: randomNum(0, 100);
+
+  $startEndX4: randomNum(0, 100);
+  $startEndY4: randomNum(0, 100);
+
+  $startEndX5: randomNum(0, 100);
+  $startEndY5: randomNum(0, 100);
+
+  $startEndX6: randomNum(0, 100);
+  $startEndY6: randomNum(0, 100);
+
+  $startEndX7: randomNum(0, 100);
+  $startEndY7: randomNum(0, 100);
+
+  $startEndX8: randomNum(0, 100);
+  $startEndY8: randomNum(0, 100);
+
+  $startEndX9: randomNum(0, 100);
+  $startEndY9: randomNum(0, 100);
+
+  $startEndX10: randomNum(0, 100);
+  $startEndY10: randomNum(0, 100);
+
+
+  @keyframes move1 {
+    0%   { transform: scale(1)   translate($startEndX1 + vh, $startEndY1 + vh); }
+    20%  { transform: scale(0.8, 1) translate(randomNum($startEndX1 + randomNum(-5,5), $startEndX1 + randomNum(-5,60)) + vw, randomNum($startEndY1 + randomNum(-5,5), $startEndY1 + randomNum(-5,60)) + vh); }
+    40% {transform: scale(0.8, 1) translate(randomNum($startEndX1 + randomNum(-5,5), $startEndX1 + randomNum(-5,60)) + vw, randomNum($startEndY1 + randomNum(-5,5), $startEndY1 + randomNum(-5,60)) + vh); }
+    60%  { transform: scale(1.3) translate(randomNum($startEndX1 + randomNum(-5,5), $startEndX1 + randomNum(-5,60)) + vw, $startEndY1 + randomNum(-5,60) + vh); }
+    80%  { transform: scale(1.3) translate(randomNum($startEndX1 + randomNum(-5,5), $startEndX1 + randomNum(-5,60)) + vw, $startEndY1 + randomNum(-5,60) + vh); }
+    100% { transform: scale(1)   translate($startEndX1 + vh, $startEndY1 + vh); }
+  }
+
+  @keyframes move2 {
+    0%   { transform: scale(1)   translate($startEndX2 + vh, $startEndY2 + vh); }
+    20%  { transform: scale(0.8, 1) translate(randomNum($startEndX2 + randomNum(-5,5), $startEndX2 + randomNum(-5,60)) + vw, randomNum($startEndY2 + randomNum(-5,5), $startEndY2 + randomNum(-5,60)) + vh); }
+    40% {transform: scale(0.8, 1) translate(randomNum($startEndX2 + randomNum(-5,5), $startEndX2 + randomNum(-5,60)) + vw, randomNum($startEndY2 + randomNum(-5,5), $startEndY2 + randomNum(-5,60)) + vh); }
+    60%  { transform: scale(1.3) translate(randomNum($startEndX2 + randomNum(-5,5), $startEndX2 + randomNum(-5,60)) + vw, $startEndY2 + randomNum(-5,60) + vh); }
+    80%  { transform: scale(1.3) translate(randomNum($startEndX2 + randomNum(-5,5), $startEndX2 + randomNum(-5,60)) + vw, $startEndY2 + randomNum(-5,60) + vh); }
+    100% { transform: scale(1)   translate($startEndX2 + vh, $startEndY2 + vh); }
+  }
+  @keyframes move3 {
+    0%   { transform: scale(1)   translate($startEndX3 + vh, $startEndY3 + vh); }
+    20%  { transform: scale(0.8, 1) translate(randomNum($startEndX3 + randomNum(-5,5), $startEndX3 + randomNum(-5,60)) + vw, randomNum($startEndY3 + randomNum(-5,5), $startEndY3 + randomNum(-5,60)) + vh); }
+    40% {transform: scale(0.8, 1) translate(randomNum($startEndX3 + randomNum(-5,5), $startEndX3 + randomNum(-5,60)) + vw, randomNum($startEndY3 + randomNum(-5,5), $startEndY3 + randomNum(-5,60)) + vh); }
+    60%  { transform: scale(1.3) translate(randomNum($startEndX3 + randomNum(-5,5), $startEndX3 + randomNum(-5,60)) + vw, $startEndY3 + randomNum(-5,60) + vh); }
+    80%  { transform: scale(1.3) translate(randomNum($startEndX3 + randomNum(-5,5), $startEndX3 + randomNum(-5,60)) + vw, $startEndY3 + randomNum(-5,60) + vh); }
+    100% { transform: scale(1)   translate($startEndX3 + vh, $startEndY3 + vh); }
+  }
+  @keyframes move4 {
+    0%   { transform: scale(1)   translate($startEndX4 + vh, $startEndY4 + vh); }
+    20%  { transform: scale(0.8, 1) translate(randomNum($startEndX4 + randomNum(-5,5), $startEndX4 + randomNum(-5,60)) + vw, randomNum($startEndY4 + randomNum(-5,5), $startEndY4 + randomNum(-5,60)) + vh); }
+    40% {transform: scale(0.8, 1) translate(randomNum($startEndX4 + randomNum(-5,5), $startEndX4 + randomNum(-5,60)) + vw, randomNum($startEndY4 + randomNum(-5,5), $startEndY4 + randomNum(-5,60)) + vh); }
+    60%  { transform: scale(1.3) translate(randomNum($startEndX4 + randomNum(-5,5), $startEndX4 + randomNum(-5,60)) + vw, $startEndY4 + randomNum(-5,60) + vh); }
+    80%  { transform: scale(1.3) translate(randomNum($startEndX4 + randomNum(-5,5), $startEndX4 + randomNum(-5,60)) + vw, $startEndY4 + randomNum(-5,60) + vh); }
+    100% { transform: scale(1)   translate($startEndX4 + vh, $startEndY4 + vh); }
+  }
+  @keyframes move5 {
+    0%   { transform: scale(1)   translate($startEndX5 + vh, $startEndY5 + vh); }
+    20%  { transform: scale(0.8, 1) translate(randomNum($startEndX5 + randomNum(-5,5), $startEndX5 + randomNum(-5,60)) + vw, randomNum($startEndY5 + randomNum(-5,5), $startEndY5 + randomNum(-5,60)) + vh); }
+    40% {transform: scale(0.8, 1) translate(randomNum($startEndX5 + randomNum(-5,5), $startEndX5 + randomNum(-5,60)) + vw, randomNum($startEndY5 + randomNum(-5,5), $startEndY5 + randomNum(-5,60)) + vh); }
+    60%  { transform: scale(1.3) translate(randomNum($startEndX5 + randomNum(-5,5), $startEndX5 + randomNum(-5,60)) + vw, $startEndY5 + randomNum(-5,60) + vh); }
+    80%  { transform: scale(1.3) translate(randomNum($startEndX5 + randomNum(-5,5), $startEndX5 + randomNum(-5,60)) + vw, $startEndY5 + randomNum(-5,60) + vh); }
+    100% { transform: scale(1)   translate($startEndX5 + vh, $startEndY5 + vh); }
+  }
+  @keyframes move6 {
+    0%   { transform: scale(1)   translate($startEndX6 + vh, $startEndY6 + vh); }
+    20%  { transform: scale(0.8, 1) translate(randomNum($startEndX6 + randomNum(-5,5), $startEndX6 + randomNum(-5,60)) + vw, randomNum($startEndY6 + randomNum(-5,5), $startEndY6 + randomNum(-5,60)) + vh); }
+    40% {transform: scale(0.8, 1) translate(randomNum($startEndX6 + randomNum(-5,5), $startEndX6 + randomNum(-5,60)) + vw, randomNum($startEndY6 + randomNum(-5,5), $startEndY6 + randomNum(-5,60)) + vh); }
+    60%  { transform: scale(1.3) translate(randomNum($startEndX6 + randomNum(-5,5), $startEndX6 + randomNum(-5,60)) + vw, $startEndY6 + randomNum(-5,60) + vh); }
+    80%  { transform: scale(1.3) translate(randomNum($startEndX6 + randomNum(-5,5), $startEndX6 + randomNum(-5,60)) + vw, $startEndY6 + randomNum(-5,60) + vh); }
+    100% { transform: scale(1)   translate($startEndX6 + vh, $startEndY6 + vh); }
+  }
+  @keyframes move7 {
+    0%   { transform: scale(1)   translate($startEndX7 + vh, $startEndY7 + vh); }
+    20%  { transform: scale(0.8, 1) translate(randomNum($startEndX7 + randomNum(-5,5), $startEndX7 + randomNum(-5,60)) + vw, randomNum($startEndY7 + randomNum(-5,5), $startEndY7 + randomNum(-5,60)) + vh); }
+    40% {transform: scale(0.8, 1) translate(randomNum($startEndX7 + randomNum(-5,5), $startEndX7 + randomNum(-5,60)) + vw, randomNum($startEndY7 + randomNum(-5,5), $startEndY7 + randomNum(-5,60)) + vh); }
+    60%  { transform: scale(1.3) translate(randomNum($startEndX7 + randomNum(-5,5), $startEndX7 + randomNum(-5,60)) + vw, $startEndY7 + randomNum(-5,60) + vh); }
+    80%  { transform: scale(1.3) translate(randomNum($startEndX7 + randomNum(-5,5), $startEndX7 + randomNum(-5,60)) + vw, $startEndY7 + randomNum(-5,60) + vh); }
+    100% { transform: scale(1)   translate($startEndX7 + vh, $startEndY7 + vh); }
+  }
+  @keyframes move8 {
+    0%   { transform: scale(1)   translate($startEndX8 + vh, $startEndY8 + vh); }
+    20%  { transform: scale(0.8, 1) translate(randomNum($startEndX8 + randomNum(-5,5), $startEndX8 + randomNum(-5,60)) + vw, randomNum($startEndY8 + randomNum(-5,5), $startEndY8 + randomNum(-5,60)) + vh); }
+    40% {transform: scale(0.8, 1) translate(randomNum($startEndX8 + randomNum(-5,5), $startEndX8 + randomNum(-5,60)) + vw, randomNum($startEndY8 + randomNum(-5,5), $startEndY8 + randomNum(-5,60)) + vh); }
+    60%  { transform: scale(1.3) translate(randomNum($startEndX8 + randomNum(-5,5), $startEndX8 + randomNum(-5,60)) + vw, $startEndY8 + randomNum(-5,60) + vh); }
+    80%  { transform: scale(1.3) translate(randomNum($startEndX8 + randomNum(-5,5), $startEndX8 + randomNum(-5,60)) + vw, $startEndY8 + randomNum(-5,60) + vh); }
+    100% { transform: scale(1)   translate($startEndX8 + vh, $startEndY8 + vh); }
+  }
+  @keyframes move9 {
+    0%   { transform: scale(1)   translate($startEndX9 + vh, $startEndY9 + vh); }
+    20%  { transform: scale(0.8, 1) translate(randomNum($startEndX9 + randomNum(-5,5), $startEndX9 + randomNum(-5,60)) + vw, randomNum($startEndY9 + randomNum(-5,5), $startEndY9 + randomNum(-5,60)) + vh); }
+    40% {transform: scale(0.8, 1) translate(randomNum($startEndX9 + randomNum(-5,5), $startEndX9 + randomNum(-5,60)) + vw, randomNum($startEndY9 + randomNum(-5,5), $startEndY9 + randomNum(-5,60)) + vh); }
+    60%  { transform: scale(1.3) translate(randomNum($startEndX9 + randomNum(-5,5), $startEndX9 + randomNum(-5,60)) + vw, $startEndY9 + randomNum(-5,60) + vh); }
+    80%  { transform: scale(1.3) translate(randomNum($startEndX9 + randomNum(-5,5), $startEndX9 + randomNum(-5,60)) + vw, $startEndY9 + randomNum(-5,60) + vh); }
+    100% { transform: scale(1)   translate($startEndX9 + vh, $startEndY9 + vh); }
+  }
+  @keyframes move10 {
+    0%   { transform: scale(1)   translate($startEndX10 + vh, $startEndY10 + vh); }
+    20%  { transform: scale(0.8, 1) translate(randomNum($startEndX10 + randomNum(-5,5), $startEndX10 + randomNum(-5,60)) + vw, randomNum($startEndY10 + randomNum(-5,5), $startEndY10 + randomNum(-5,60)) + vh); }
+    40% {transform: scale(0.8, 1) translate(randomNum($startEndX10 + randomNum(-5,5), $startEndX10 + randomNum(-5,60)) + vw, randomNum($startEndY10 + randomNum(-5,5), $startEndY10 + randomNum(-5,60)) + vh); }
+    60%  { transform: scale(1.3) translate(randomNum($startEndX10 + randomNum(-5,5), $startEndX10 + randomNum(-5,60)) + vw, $startEndY10 + randomNum(-5,60) + vh); }
+    80%  { transform: scale(1.3) translate(randomNum($startEndX10 + randomNum(-5,5), $startEndX10 + randomNum(-5,60)) + vw, $startEndY10 + randomNum(-5,60) + vh); }
+    100% { transform: scale(1)   translate($startEndX10 + vh, $startEndY10 + vh); }
+  }
