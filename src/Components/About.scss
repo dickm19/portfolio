@@ -1,320 +1,343 @@
-.blob1 {
+@function randomNum($min, $max) {
+  $rand: random();
+  $randomNum: $min + floor($rand * (($max - $min) + 1));
+
+  @return $randomNum;
+}
+
+
+.blob{
+  border-radius: 42% 58% 70% 30% / 45% 45% 55% 55%;
+  width: 150px; height: 144px;
+  animation: morph 3s linear infinite; 
+  transform-style: preserve-3d;
+  outline: 1px solid transparent;
+  will-change: border-radius;
+}
+
+.blob:before, .blob:after {
+  content: '';
+  width: 75%;
+  height: 72%;
+  display: block;
+  position: absolute;
+  left: 19px;
+  top: 18px;
+  border-radius: 42% 58% 90% 30% / 45% 45% 55% 55%;
+  box-shadow: 0px 95px 120px rgba(0, 102, 255, 0);
+  will-change: border-radius, transform, opacity;
+  animation-delay: 200ms;
+  background-color: #08316a5d;
+  filter:url('#drop-shadow');
+}
+
+.blob:before{
+animation: morph 3s linear infinite;
+opacity: .21;
+animation-duration: 1.5s;
+}
+
+.blob:after{
+animation: morph 3s linear infinite;
+animation-delay: 400ms;
+opacity: .89;
+content: "";
+line-height: 135px;
+text-indent: 40px;
+}
+
+#blob1 {
     position: absolute;
     top: 0;
     left: 0;
-    fill: #08316a5d;
+    // background-color: blue;
     width: 10vmax;
     z-index: -1;
     animation: move1 50s ease-in-out infinite;
     transform-origin: 50% 50%;
   }
-  .blob2 {
+  #blob2 {
     position: absolute;
     top: 0;
     left: 0;
-    fill: #08316a5d;
     width: 10vmax;
     z-index: -1;
     animation: move2 35s ease-in-out infinite;
     transform-origin: 50% 50%;
   }
-  .blob3 {
+  #blob3 {
     position: absolute;
     top: 0;
     left: 0;
-    fill: #08316a5d;
     width: 10vmax;
     z-index: -1;
     animation: move3 40s ease-in-out infinite;
     transform-origin: 50% 50%;
   }
-  .blob4 {
+  #blob4 {
     position: absolute;
     top: 0;
     left: 0;
-    fill: #08316a5d;
     width: 10vmax;
     z-index: -1;
     animation: move4 60s ease-in-out infinite;
     transform-origin: 50% 50%;
   }
-  .blob5 {
+  #blob5 {
     position: absolute;
     top: 0;
     left: 0;
-    fill: #08316a5d;
     width: 10vmax;
     z-index: -1;
     animation: move5 25s ease-in-out infinite;
     transform-origin: 50% 50%;
   }
-  .blob6 {
+  #blob6 {
     position: absolute;
     top: 0;
     left: 0;
-    fill: #08316a5d;
     width: 10vmax;
     z-index: -1;
     animation: move6 30s ease-in-out infinite;
     transform-origin: 50% 50%;
   }
-  .blob7 {
+  #blob7 {
     position: absolute;
     top: 0;
     left: 0;
-    fill: #08316a5d;
     width: 10vmax;
     z-index: -1;
     animation: move7 90s ease-in-out infinite;
     transform-origin: 50% 50%;
   }
-  .blob8 {
+  #blob8 {
     position: absolute;
     top: 0;
     left: 0;
-    fill: #08316a5d;
     width: 10vmax;
     z-index: -1;
     animation: move8 40s ease-in-out infinite;
     transform-origin: 50% 50%;
   }
-  .blob9 {
+  #blob9 {
     position: absolute;
     top: 0;
     left: 0;
-    fill: #08316a5d;
     width: 10vmax;
     z-index: -1;
     animation: move9 25s ease-in-out infinite;
     transform-origin: 50% 50%;
   }
-  .blob10 {
+  #blob10 {
     position: absolute;
     top: 0;
     left: 0;
-    fill: #08316a5d;
     width: 10vmax;
     z-index: -1;
     animation: move10 35s ease-in-out infinite;
     transform-origin: 50% 50%;
   }
-
-  .li1{
-    position: absolute;
-    top: 0;
-    left: 0;
-    fill: #08316a5d;
-    width: 10vmax;
-    z-index: -1;
-    animation: move1 50s ease-in-out infinite;
-    transform-origin: 50% 50%;
-  }
-  .li2{
-    position: absolute;
-    top: 0;
-    left: 0;
-    fill: #08316a5d;
-    width: 10vmax;
-    z-index: -1;
-    animation: move2 35s ease-in-out infinite;
-    transform-origin: 50% 50%;
-  }
-  .li3{
-    position: absolute;
-    top: 0;
-    left: 0;
-    fill: #08316a5d;
-    width: 10vmax;
-    z-index: -1;
-    animation: move3 40s ease-in-out infinite;
-    transform-origin: 50% 50%;
-  }
-  .li4{
-    position: absolute;
-    top: 0;
-    left: 0;
-    fill: #08316a5d;
-    width: 10vmax;
-    z-index: -1;
-    animation: move4 60s ease-in-out infinite;
-    transform-origin: 50% 50%;
-  }
-  .li5{
-    position: absolute;
-    top: 0;
-    left: 0;
-    fill: #08316a5d;
-    width: 10vmax;
-    z-index: -1;
-    animation: move5 25s ease-in-out infinite;
-    transform-origin: 50% 50%;
-  }
-  .li6{
-    position: absolute;
-    top: 0;
-    left: 0;
-    fill: #08316a5d;
-    width: 10vmax;
-    z-index: -1;
-    animation: move6 30s ease-in-out infinite;
-    transform-origin: 50% 50%;
-  }
-  .li7{
-    position: absolute;
-    top: 0;
-    left: 0;
-    fill: #08316a5d;
-    width: 10vmax;
-    z-index: -1;
-    animation: move7 90s ease-in-out infinite;
-    transform-origin: 50% 50%;
-  }
-  .li8{
-    position: absolute;
-    top: 0;
-    left: 0;
-    fill: #08316a5d;
-    width: 10vmax;
-    z-index: -1;
-    animation: move8 40s ease-in-out infinite;
-    transform-origin: 50% 50%;
-  }
-  .li9{
-    position: absolute;
-    top: 0;
-    left: 0;
-    fill: #08316a5d;
-    width: 10vmax;
-    z-index: -1;
-    animation: move9 25s ease-in-out infinite;
-    transform-origin: 50% 50%;
-  }
-  .li10{
-    position: absolute;
-    top: 0;
-    left: 0;
-    fill: #08316a5d;
-    width: 10vmax;
-    z-index: -1;
-    animation: move10 35s ease-in-out infinite;
-    transform-origin: 50% 50%;
-  }
-
-  @function randomNum($min, $max) {
-    $rand: random();
-    $randomNum: $min + floor($rand * (($max - $min) + 1));
   
-    @return $randomNum;
+  p{
+    position: absolute;
+    top: 0;
+    left: 0;
+    fill: #08316a5d;
+    width: 10vmax;
+    z-index: -1;
+    transform-origin: 50% 50%;
+    text-align: center;
+    margin: 0 auto;
+    margin-top: 5vh;
   }
-  $startEndX1: randomNum(0, 100);
-  $startEndY1: randomNum(0, 100);
 
-  $startEndX2: randomNum(0, 100);
-  $startEndY2: randomNum(0, 100);
+  #li1{
+    animation: move1 50s ease-in-out infinite;
+    display: inline-block;
+    margin-top: 8vh;
+  }
+  #li2{
+    animation: move2 35s ease-in-out infinite;
+    display: inline-block;
+    margin-top: 8vh;
+  }
+  #li3{
+    animation: move3 40s ease-in-out infinite;
+    display: inline-block;
+    margin-top: 8vh;
+  }
+  #li4{
+    animation: move4 60s ease-in-out infinite;
+    display: inline-block;
+    margin-top: 8vh;
+  }
+  #li5{
+    animation: move5 25s ease-in-out infinite;
+    display: inline-block;
+    margin-top: 8vh;
+  }
+  #li6{
+    animation: move6 30s ease-in-out infinite;
+    display: inline-block;
+    margin-top: 8vh;
+  }
+  #li7{
+    
+    animation: move7 90s ease-in-out infinite;
+    display: inline-block;
+    margin-top: 8vh;
+  }
+  #li8{
+    animation: move8 40s ease-in-out infinite;
+    display: inline-block;
+    margin-top: 8vh;
+  }
+  #li9{
+    animation: move9 25s ease-in-out infinite;
+    display: inline-block;
+    margin-top: 8vh;
+  }
+  #li10{
+    animation: move10 35s ease-in-out infinite;
+    display: inline-block;
+    margin-top: 8vh;
+  }
 
-  $startEndX3: randomNum(0, 100);
-  $startEndY3: randomNum(0, 100);
 
-  $startEndX4: randomNum(0, 100);
-  $startEndY4: randomNum(0, 100);
 
-  $startEndX5: randomNum(0, 100);
-  $startEndY5: randomNum(0, 100);
+  $startEndX1: randomNum(0, 60);
+  $startEndY1: randomNum(0, 60);
 
-  $startEndX6: randomNum(0, 100);
-  $startEndY6: randomNum(0, 100);
+  $startEndX2: randomNum(0, 60);
+  $startEndY2: randomNum(0, 60);
 
-  $startEndX7: randomNum(0, 100);
-  $startEndY7: randomNum(0, 100);
+  $startEndX3: randomNum(0, 60);
+  $startEndY3: randomNum(0, 60);
 
-  $startEndX8: randomNum(0, 100);
-  $startEndY8: randomNum(0, 100);
+  $startEndX4: randomNum(0, 60);
+  $startEndY4: randomNum(0, 60);
 
-  $startEndX9: randomNum(0, 100);
-  $startEndY9: randomNum(0, 100);
+  $startEndX5: randomNum(0, 60);
+  $startEndY5: randomNum(0, 60);
 
-  $startEndX10: randomNum(0, 100);
-  $startEndY10: randomNum(0, 100);
+  $startEndX6: randomNum(0, 60);
+  $startEndY6: randomNum(0, 60);
+
+  $startEndX7: randomNum(0, 60);
+  $startEndY7: randomNum(0, 60);
+
+  $startEndX8: randomNum(0, 60);
+  $startEndY8: randomNum(0, 60);
+
+  $startEndX9: randomNum(0, 60);
+  $startEndY9: randomNum(0, 60);
+
+  $startEndX10: randomNum(0, 60);
+  $startEndY10: randomNum(0, 60);
 
 
   @keyframes move1 {
-    0%   { transform: scale(1)   translate($startEndX1 + vh, $startEndY1 + vh); }
-    20%  { transform: scale(0.8, 1) translate(randomNum($startEndX1 + randomNum(-5,5), $startEndX1 + randomNum(-5,60)) + vw, randomNum($startEndY1 + randomNum(-5,5), $startEndY1 + randomNum(-5,60)) + vh); }
-    40% {transform: scale(0.8, 1) translate(randomNum($startEndX1 + randomNum(-5,5), $startEndX1 + randomNum(-5,60)) + vw, randomNum($startEndY1 + randomNum(-5,5), $startEndY1 + randomNum(-5,60)) + vh); }
-    60%  { transform: scale(1.3) translate(randomNum($startEndX1 + randomNum(-5,5), $startEndX1 + randomNum(-5,60)) + vw, $startEndY1 + randomNum(-5,60) + vh); }
-    80%  { transform: scale(1.3) translate(randomNum($startEndX1 + randomNum(-5,5), $startEndX1 + randomNum(-5,60)) + vw, $startEndY1 + randomNum(-5,60) + vh); }
-    100% { transform: scale(1)   translate($startEndX1 + vh, $startEndY1 + vh); }
+    0%   { transform:   translate($startEndX1 + vw, $startEndY1 + vh); }
+    20%  { transform: translate(randomNum($startEndX1 + randomNum(-5,5), $startEndX1 + randomNum(-5, 33)) + vw, randomNum($startEndY1 + randomNum(-5,5), $startEndY1 + randomNum(-5, 33)) + vh); }
+    40% {transform: translate(randomNum($startEndX1 + randomNum(-5,5), $startEndX1 + randomNum(-5, 33)) + vw, randomNum($startEndY1 + randomNum(-5,5), $startEndY1 + randomNum(-5, 33)) + vh); }
+    60%  { transform: translate(randomNum($startEndX1 + randomNum(-5,5), $startEndX1 + randomNum(-5, 33)) + vw, $startEndY1 + randomNum(-5, 33) + vh); }
+    80%  { transform: translate(randomNum($startEndX1 + randomNum(-5,5), $startEndX1 + randomNum(-5, 33)) + vw, $startEndY1 + randomNum(-5, 33) + vh); }
+    100% { transform:   translate($startEndX1 + vw, $startEndY1 + vh); }
   }
 
   @keyframes move2 {
-    0%   { transform: scale(1)   translate($startEndX2 + vh, $startEndY2 + vh); }
-    20%  { transform: scale(0.8, 1) translate(randomNum($startEndX2 + randomNum(-5,5), $startEndX2 + randomNum(-5,60)) + vw, randomNum($startEndY2 + randomNum(-5,5), $startEndY2 + randomNum(-5,60)) + vh); }
-    40% {transform: scale(0.8, 1) translate(randomNum($startEndX2 + randomNum(-5,5), $startEndX2 + randomNum(-5,60)) + vw, randomNum($startEndY2 + randomNum(-5,5), $startEndY2 + randomNum(-5,60)) + vh); }
-    60%  { transform: scale(1.3) translate(randomNum($startEndX2 + randomNum(-5,5), $startEndX2 + randomNum(-5,60)) + vw, $startEndY2 + randomNum(-5,60) + vh); }
-    80%  { transform: scale(1.3) translate(randomNum($startEndX2 + randomNum(-5,5), $startEndX2 + randomNum(-5,60)) + vw, $startEndY2 + randomNum(-5,60) + vh); }
-    100% { transform: scale(1)   translate($startEndX2 + vh, $startEndY2 + vh); }
+    0%   { transform:   translate($startEndX2 + vw, $startEndY2 + vh); }
+    20%  { transform: translate(randomNum($startEndX2 + randomNum(-5,5), $startEndX2 + randomNum(-5, 33)) + vw, randomNum($startEndY2 + randomNum(-5,5), $startEndY2 + randomNum(-5, 33)) + vh); }
+    40% {transform: translate(randomNum($startEndX2 + randomNum(-5,5), $startEndX2 + randomNum(-5, 33)) + vw, randomNum($startEndY2 + randomNum(-5,5), $startEndY2 + randomNum(-5, 33)) + vh); }
+    60%  { transform: translate(randomNum($startEndX2 + randomNum(-5,5), $startEndX2 + randomNum(-5, 33)) + vw, $startEndY2 + randomNum(-5, 33) + vh); }
+    80%  { transform: translate(randomNum($startEndX2 + randomNum(-5,5), $startEndX2 + randomNum(-5, 33)) + vw, $startEndY2 + randomNum(-5, 33) + vh); }
+    100% { transform:   translate($startEndX2 + vw, $startEndY1 + vh); }
   }
   @keyframes move3 {
-    0%   { transform: scale(1)   translate($startEndX3 + vh, $startEndY3 + vh); }
-    20%  { transform: scale(0.8, 1) translate(randomNum($startEndX3 + randomNum(-5,5), $startEndX3 + randomNum(-5,60)) + vw, randomNum($startEndY3 + randomNum(-5,5), $startEndY3 + randomNum(-5,60)) + vh); }
-    40% {transform: scale(0.8, 1) translate(randomNum($startEndX3 + randomNum(-5,5), $startEndX3 + randomNum(-5,60)) + vw, randomNum($startEndY3 + randomNum(-5,5), $startEndY3 + randomNum(-5,60)) + vh); }
-    60%  { transform: scale(1.3) translate(randomNum($startEndX3 + randomNum(-5,5), $startEndX3 + randomNum(-5,60)) + vw, $startEndY3 + randomNum(-5,60) + vh); }
-    80%  { transform: scale(1.3) translate(randomNum($startEndX3 + randomNum(-5,5), $startEndX3 + randomNum(-5,60)) + vw, $startEndY3 + randomNum(-5,60) + vh); }
-    100% { transform: scale(1)   translate($startEndX3 + vh, $startEndY3 + vh); }
+    0%   { transform:   translate($startEndX3 + vw, $startEndY3 + vh); }
+    20%  { transform: translate(randomNum($startEndX3 + randomNum(-5,5), $startEndX3 + randomNum(-5, 33)) + vw, randomNum($startEndY3 + randomNum(-5,5), $startEndY3 + randomNum(-5, 33)) + vh); }
+    40% {transform: translate(randomNum($startEndX3 + randomNum(-5,5), $startEndX3 + randomNum(-5, 33)) + vw, randomNum($startEndY3 + randomNum(-5,5), $startEndY3 + randomNum(-5, 33)) + vh); }
+    60%  { transform: translate(randomNum($startEndX3 + randomNum(-5,5), $startEndX3 + randomNum(-5, 33)) + vw, $startEndY3 + randomNum(-5, 33) + vh); }
+    80%  { transform: translate(randomNum($startEndX3 + randomNum(-5,5), $startEndX3 + randomNum(-5, 33)) + vw, $startEndY3 + randomNum(-5, 33) + vh); }
+    100% { transform:   translate($startEndX3 + vw, $startEndY3 + vh); }
   }
   @keyframes move4 {
-    0%   { transform: scale(1)   translate($startEndX4 + vh, $startEndY4 + vh); }
-    20%  { transform: scale(0.8, 1) translate(randomNum($startEndX4 + randomNum(-5,5), $startEndX4 + randomNum(-5,60)) + vw, randomNum($startEndY4 + randomNum(-5,5), $startEndY4 + randomNum(-5,60)) + vh); }
-    40% {transform: scale(0.8, 1) translate(randomNum($startEndX4 + randomNum(-5,5), $startEndX4 + randomNum(-5,60)) + vw, randomNum($startEndY4 + randomNum(-5,5), $startEndY4 + randomNum(-5,60)) + vh); }
-    60%  { transform: scale(1.3) translate(randomNum($startEndX4 + randomNum(-5,5), $startEndX4 + randomNum(-5,60)) + vw, $startEndY4 + randomNum(-5,60) + vh); }
-    80%  { transform: scale(1.3) translate(randomNum($startEndX4 + randomNum(-5,5), $startEndX4 + randomNum(-5,60)) + vw, $startEndY4 + randomNum(-5,60) + vh); }
-    100% { transform: scale(1)   translate($startEndX4 + vh, $startEndY4 + vh); }
+    0%   { transform:   translate($startEndX4 + vw, $startEndY4 + vh); }
+    20%  { transform: translate(randomNum($startEndX4 + randomNum(-5,5), $startEndX4 + randomNum(-5, 33)) + vw, randomNum($startEndY4 + randomNum(-5,5), $startEndY4 + randomNum(-5, 33)) + vh); }
+    40% {transform: translate(randomNum($startEndX4 + randomNum(-5,5), $startEndX4 + randomNum(-5, 33)) + vw, randomNum($startEndY4 + randomNum(-5,5), $startEndY4 + randomNum(-5, 33)) + vh); }
+    60%  { transform: translate(randomNum($startEndX4 + randomNum(-5,5), $startEndX4 + randomNum(-5, 33)) + vw, $startEndY4 + randomNum(-5, 33) + vh); }
+    80%  { transform: translate(randomNum($startEndX4 + randomNum(-5,5), $startEndX4 + randomNum(-5, 33)) + vw, $startEndY4 + randomNum(-5, 33) + vh); }
+    100% { transform:   translate($startEndX4 + vw, $startEndY4 + vh); }
   }
   @keyframes move5 {
-    0%   { transform: scale(1)   translate($startEndX5 + vh, $startEndY5 + vh); }
-    20%  { transform: scale(0.8, 1) translate(randomNum($startEndX5 + randomNum(-5,5), $startEndX5 + randomNum(-5,60)) + vw, randomNum($startEndY5 + randomNum(-5,5), $startEndY5 + randomNum(-5,60)) + vh); }
-    40% {transform: scale(0.8, 1) translate(randomNum($startEndX5 + randomNum(-5,5), $startEndX5 + randomNum(-5,60)) + vw, randomNum($startEndY5 + randomNum(-5,5), $startEndY5 + randomNum(-5,60)) + vh); }
-    60%  { transform: scale(1.3) translate(randomNum($startEndX5 + randomNum(-5,5), $startEndX5 + randomNum(-5,60)) + vw, $startEndY5 + randomNum(-5,60) + vh); }
-    80%  { transform: scale(1.3) translate(randomNum($startEndX5 + randomNum(-5,5), $startEndX5 + randomNum(-5,60)) + vw, $startEndY5 + randomNum(-5,60) + vh); }
-    100% { transform: scale(1)   translate($startEndX5 + vh, $startEndY5 + vh); }
+    0%   { transform:   translate($startEndX5 + vw, $startEndY5 + vh); }
+    20%  { transform: translate(randomNum($startEndX5 + randomNum(-5,5), $startEndX5 + randomNum(-5, 33)) + vw, randomNum($startEndY5 + randomNum(-5,5), $startEndY5 + randomNum(-5, 33)) + vh); }
+    40% {transform: translate(randomNum($startEndX5 + randomNum(-5,5), $startEndX5 + randomNum(-5, 33)) + vw, randomNum($startEndY5 + randomNum(-5,5), $startEndY5 + randomNum(-5, 33)) + vh); }
+    60%  { transform: translate(randomNum($startEndX5 + randomNum(-5,5), $startEndX5 + randomNum(-5, 33)) + vw, $startEndY5 + randomNum(-5, 33) + vh); }
+    80%  { transform: translate(randomNum($startEndX5 + randomNum(-5,5), $startEndX5 + randomNum(-5, 33)) + vw, $startEndY5 + randomNum(-5, 33) + vh); }
+    100% { transform:   translate($startEndX5 + vw, $startEndY5 + vh); }
   }
   @keyframes move6 {
-    0%   { transform: scale(1)   translate($startEndX6 + vh, $startEndY6 + vh); }
-    20%  { transform: scale(0.8, 1) translate(randomNum($startEndX6 + randomNum(-5,5), $startEndX6 + randomNum(-5,60)) + vw, randomNum($startEndY6 + randomNum(-5,5), $startEndY6 + randomNum(-5,60)) + vh); }
-    40% {transform: scale(0.8, 1) translate(randomNum($startEndX6 + randomNum(-5,5), $startEndX6 + randomNum(-5,60)) + vw, randomNum($startEndY6 + randomNum(-5,5), $startEndY6 + randomNum(-5,60)) + vh); }
-    60%  { transform: scale(1.3) translate(randomNum($startEndX6 + randomNum(-5,5), $startEndX6 + randomNum(-5,60)) + vw, $startEndY6 + randomNum(-5,60) + vh); }
-    80%  { transform: scale(1.3) translate(randomNum($startEndX6 + randomNum(-5,5), $startEndX6 + randomNum(-5,60)) + vw, $startEndY6 + randomNum(-5,60) + vh); }
-    100% { transform: scale(1)   translate($startEndX6 + vh, $startEndY6 + vh); }
+    0%   { transform:   translate($startEndX6 + vw, $startEndY6 + vh); }
+    20%  { transform: translate(randomNum($startEndX6 + randomNum(-5,5), $startEndX6 + randomNum(-5, 33)) + vw, randomNum($startEndY6 + randomNum(-5,5), $startEndY6 + randomNum(-5, 33)) + vh); }
+    40% {transform: translate(randomNum($startEndX6 + randomNum(-5,5), $startEndX6 + randomNum(-5, 33)) + vw, randomNum($startEndY6 + randomNum(-5,5), $startEndY6 + randomNum(-5, 33)) + vh); }
+    60%  { transform: translate(randomNum($startEndX6 + randomNum(-5,5), $startEndX6 + randomNum(-5, 33)) + vw, $startEndY6 + randomNum(-5, 33) + vh); }
+    80%  { transform: translate(randomNum($startEndX6 + randomNum(-5,5), $startEndX6 + randomNum(-5, 33)) + vw, $startEndY6 + randomNum(-5, 33) + vh); }
+    100% { transform:   translate($startEndX6 + vw, $startEndY6 + vh); }
   }
   @keyframes move7 {
-    0%   { transform: scale(1)   translate($startEndX7 + vh, $startEndY7 + vh); }
-    20%  { transform: scale(0.8, 1) translate(randomNum($startEndX7 + randomNum(-5,5), $startEndX7 + randomNum(-5,60)) + vw, randomNum($startEndY7 + randomNum(-5,5), $startEndY7 + randomNum(-5,60)) + vh); }
-    40% {transform: scale(0.8, 1) translate(randomNum($startEndX7 + randomNum(-5,5), $startEndX7 + randomNum(-5,60)) + vw, randomNum($startEndY7 + randomNum(-5,5), $startEndY7 + randomNum(-5,60)) + vh); }
-    60%  { transform: scale(1.3) translate(randomNum($startEndX7 + randomNum(-5,5), $startEndX7 + randomNum(-5,60)) + vw, $startEndY7 + randomNum(-5,60) + vh); }
-    80%  { transform: scale(1.3) translate(randomNum($startEndX7 + randomNum(-5,5), $startEndX7 + randomNum(-5,60)) + vw, $startEndY7 + randomNum(-5,60) + vh); }
-    100% { transform: scale(1)   translate($startEndX7 + vh, $startEndY7 + vh); }
+    0%   { transform:   translate($startEndX7 + vw, $startEndY7 + vh); }
+    20%  { transform: translate(randomNum($startEndX7 + randomNum(-5,5), $startEndX7 + randomNum(-5, 33)) + vw, randomNum($startEndY7 + randomNum(-5,5), $startEndY7 + randomNum(-5, 33)) + vh); }
+    40% {transform: translate(randomNum($startEndX7 + randomNum(-5,5), $startEndX7 + randomNum(-5, 33)) + vw, randomNum($startEndY7 + randomNum(-5,5), $startEndY7 + randomNum(-5, 33)) + vh); }
+    60%  { transform: translate(randomNum($startEndX7 + randomNum(-5,5), $startEndX7 + randomNum(-5, 33)) + vw, $startEndY7 + randomNum(-5, 33) + vh); }
+    80%  { transform: translate(randomNum($startEndX7 + randomNum(-5,5), $startEndX7 + randomNum(-5, 33)) + vw, $startEndY7 + randomNum(-5, 33) + vh); }
+    100% { transform:   translate($startEndX7 + vw, $startEndY7 + vh); }
   }
   @keyframes move8 {
-    0%   { transform: scale(1)   translate($startEndX8 + vh, $startEndY8 + vh); }
-    20%  { transform: scale(0.8, 1) translate(randomNum($startEndX8 + randomNum(-5,5), $startEndX8 + randomNum(-5,60)) + vw, randomNum($startEndY8 + randomNum(-5,5), $startEndY8 + randomNum(-5,60)) + vh); }
-    40% {transform: scale(0.8, 1) translate(randomNum($startEndX8 + randomNum(-5,5), $startEndX8 + randomNum(-5,60)) + vw, randomNum($startEndY8 + randomNum(-5,5), $startEndY8 + randomNum(-5,60)) + vh); }
-    60%  { transform: scale(1.3) translate(randomNum($startEndX8 + randomNum(-5,5), $startEndX8 + randomNum(-5,60)) + vw, $startEndY8 + randomNum(-5,60) + vh); }
-    80%  { transform: scale(1.3) translate(randomNum($startEndX8 + randomNum(-5,5), $startEndX8 + randomNum(-5,60)) + vw, $startEndY8 + randomNum(-5,60) + vh); }
-    100% { transform: scale(1)   translate($startEndX8 + vh, $startEndY8 + vh); }
+    0%   { transform:   translate($startEndX8 + vw, $startEndY8 + vh); }
+    20%  { transform: translate(randomNum($startEndX8 + randomNum(-5,5), $startEndX8 + randomNum(-5, 33)) + vw, randomNum($startEndY8 + randomNum(-5,5), $startEndY8 + randomNum(-5, 33)) + vh); }
+    40% {transform: translate(randomNum($startEndX8 + randomNum(-5,5), $startEndX8 + randomNum(-5, 33)) + vw, randomNum($startEndY8 + randomNum(-5,5), $startEndY8 + randomNum(-5, 33)) + vh); }
+    60%  { transform: translate(randomNum($startEndX8 + randomNum(-5,5), $startEndX8 + randomNum(-5, 33)) + vw, $startEndY8 + randomNum(-5, 33) + vh); }
+    80%  { transform: translate(randomNum($startEndX8 + randomNum(-5,5), $startEndX8 + randomNum(-5, 33)) + vw, $startEndY8 + randomNum(-5, 33) + vh); }
+    100% { transform:   translate($startEndX8 + vw, $startEndY8 + vh); }
   }
   @keyframes move9 {
-    0%   { transform: scale(1)   translate($startEndX9 + vh, $startEndY9 + vh); }
-    20%  { transform: scale(0.8, 1) translate(randomNum($startEndX9 + randomNum(-5,5), $startEndX9 + randomNum(-5,60)) + vw, randomNum($startEndY9 + randomNum(-5,5), $startEndY9 + randomNum(-5,60)) + vh); }
-    40% {transform: scale(0.8, 1) translate(randomNum($startEndX9 + randomNum(-5,5), $startEndX9 + randomNum(-5,60)) + vw, randomNum($startEndY9 + randomNum(-5,5), $startEndY9 + randomNum(-5,60)) + vh); }
-    60%  { transform: scale(1.3) translate(randomNum($startEndX9 + randomNum(-5,5), $startEndX9 + randomNum(-5,60)) + vw, $startEndY9 + randomNum(-5,60) + vh); }
-    80%  { transform: scale(1.3) translate(randomNum($startEndX9 + randomNum(-5,5), $startEndX9 + randomNum(-5,60)) + vw, $startEndY9 + randomNum(-5,60) + vh); }
-    100% { transform: scale(1)   translate($startEndX9 + vh, $startEndY9 + vh); }
+    0%   { transform:   translate($startEndX9 + vw, $startEndY9 + vh); }
+    20%  { transform: translate(randomNum($startEndX9 + randomNum(-5,5), $startEndX9 + randomNum(-5, 33)) + vw, randomNum($startEndY9 + randomNum(-5,5), $startEndY9 + randomNum(-5, 33)) + vh); }
+    40% {transform: translate(randomNum($startEndX9 + randomNum(-5,5), $startEndX9 + randomNum(-5, 33)) + vw, randomNum($startEndY9 + randomNum(-5,5), $startEndY9 + randomNum(-5, 33)) + vh); }
+    60%  { transform: translate(randomNum($startEndX9 + randomNum(-5,5), $startEndX9 + randomNum(-5, 33)) + vw, $startEndY9 + randomNum(-5, 33) + vh); }
+    80%  { transform: translate(randomNum($startEndX9 + randomNum(-5,5), $startEndX9 + randomNum(-5, 33)) + vw, $startEndY9 + randomNum(-5, 33) + vh); }
+    100% { transform:   translate($startEndX9 + vw, $startEndY9 + vh); }
   }
   @keyframes move10 {
-    0%   { transform: scale(1)   translate($startEndX10 + vh, $startEndY10 + vh); }
-    20%  { transform: scale(0.8, 1) translate(randomNum($startEndX10 + randomNum(-5,5), $startEndX10 + randomNum(-5,60)) + vw, randomNum($startEndY10 + randomNum(-5,5), $startEndY10 + randomNum(-5,60)) + vh); }
-    40% {transform: scale(0.8, 1) translate(randomNum($startEndX10 + randomNum(-5,5), $startEndX10 + randomNum(-5,60)) + vw, randomNum($startEndY10 + randomNum(-5,5), $startEndY10 + randomNum(-5,60)) + vh); }
-    60%  { transform: scale(1.3) translate(randomNum($startEndX10 + randomNum(-5,5), $startEndX10 + randomNum(-5,60)) + vw, $startEndY10 + randomNum(-5,60) + vh); }
-    80%  { transform: scale(1.3) translate(randomNum($startEndX10 + randomNum(-5,5), $startEndX10 + randomNum(-5,60)) + vw, $startEndY10 + randomNum(-5,60) + vh); }
-    100% { transform: scale(1)   translate($startEndX10 + vh, $startEndY10 + vh); }
+    0%   { transform:   translate($startEndX10 + vw, $startEndY10 + vh); }
+    20%  { transform: translate(randomNum($startEndX10 + randomNum(-5,5), $startEndX10 + randomNum(-5, 33)) + vw, randomNum($startEndY10 + randomNum(-5,5), $startEndY10 + randomNum(-5, 33)) + vh); }
+    40% {transform: translate(randomNum($startEndX10 + randomNum(-5,5), $startEndX10 + randomNum(-5, 33)) + vw, randomNum($startEndY10 + randomNum(-5,5), $startEndY10 + randomNum(-5, 33)) + vh); }
+    60%  { transform: translate(randomNum($startEndX10 + randomNum(-5,5), $startEndX10 + randomNum(-5, 33)) + vw, $startEndY10 + randomNum(-5, 33) + vh); }
+    80%  { transform: translate(randomNum($startEndX10 + randomNum(-5,5), $startEndX10 + randomNum(-5, 33)) + vw, $startEndY10 + randomNum(-5, 33) + vh); }
+    100% { transform:   translate($startEndX10 + vw, $startEndY10 + vh); }
   }
+  @keyframes fadeIn{
+    100%{
+      transform: scale(1.03);
+      opacity: 0;
+    }
+  }
+
+  @keyframes morph{
+    0%,100% {
+      border-radius: 42% 58% 70% 30% / 45% 45% 55% 55%;
+      transform: translate3d(0,0,0) rotateZ(0.01deg);
+    }
+    34% {
+      border-radius: 70% 30% 46% 54% / 30% 29% 71% 70%;
+      transform:  translate3d(0,5px,0) rotateZ(0.01deg);
+    }
+    50% {
+      transform: translate3d(0,0,0) rotateZ(0.01deg);
+    }
+    67% {
+      border-radius: 100% 60% 60% 100% / 100% 100% 60% 60% ;
+      transform: translate3d(0,-3px,0) rotateZ(0.01deg);
+    }
+    }

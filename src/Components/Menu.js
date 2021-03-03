@@ -1,6 +1,6 @@
 import React from 'react'
 import { Link } from 'react-router-dom'
-import './Menu.scss'
+ import './Menu.scss'
 
 // const menuBody = styled.div `
 //     background-image: linear-gradient(-200deg, rgb(218, 137, 39) 20%, #470ca7 100%);
