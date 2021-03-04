@@ -29,7 +29,7 @@ export default function About(){
             <p id='li1'>Ruby</p>
             <p id='li2'>Rails</p>
             <p id='li3'>JavaScript</p>
-            <p id='li4'>React</p>
+            <p id='li4'>React.js</p>
             <p id='li5'>React-Router</p>
             <p id='li6'>React-Redux</p>
             <p id='li7'>Redux-Thunk</p>

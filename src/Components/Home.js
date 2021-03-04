@@ -5,7 +5,7 @@ export default function Home(){
     return(
         <div className='home'>
 
-            <Link id='menu' to={"/menu"}>
+            <Link to={"/menu"}>
                     <span>Enter</span>
             </Link>
         </div>

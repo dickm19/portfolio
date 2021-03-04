@@ -5,7 +5,7 @@ export default function Portfolio(){
     return(
         <div className='portfolio'>
         <Link id='menu' to={"/menu"}>
-                <span >Back</span>
+                <span className='back' style={{marginTop: 1 + 'vh', marginLeft: 1 + 'vh', color: 'black'}}>Back</span>
         </Link>
         <h3>Pocket Dudes</h3>
         <a href='https://github.com/dickm19/pocket-dudes-frontend'>Frontend</a><br/>
