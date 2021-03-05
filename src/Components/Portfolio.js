@@ -23,7 +23,7 @@ export default function Portfolio(){
             <a className='frontend' href='https://github.com/dickm19/haiku-twitter-frontend'> Frontend</a>
             <a className='backend'href='https://github.com/dickm19/haiku-twitter-api-backend'> Backend</a><br/>
             <ReactPlayer
-                url="https://youtu.be/n54YuzA0Bqk"
+                url="https://youtu.be/rTtrQBAWrDM"
                 id='haiku-twitter-demo'
                 controls={true}
                 height='50vh'
@@ -33,7 +33,7 @@ export default function Portfolio(){
             <h3 id='movie-header'>MovieRails</h3>
             <a id='movie-rails-github' href='https://github.com/dickm19/movieRails'> GitHub</a><br/>
             <ReactPlayer
-                url="https://youtu.be/n54YuzA0Bqk"
+                url="https://youtu.be/jEa6omalgQc"
                 id='movie-rails-demo'
                 controls={true}
                 height='50vh'
