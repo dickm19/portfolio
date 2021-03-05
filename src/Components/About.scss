@@ -6,13 +6,18 @@
 }
 
 #menu{
-  position: absolute;
   margin-left: 1vw;
   margin-top: 5vh;
+  position: absolute;
   height: 5vh;
   width: 8vh;
   border-radius: 25vw;
   background-color: #5550bd51;
+  // filter:url('#drop-shadow');
+}
+
+#menu span{
+  margin-right: .5vw;
 }
 
 // #menu span{

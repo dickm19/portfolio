@@ -1,0 +1,44 @@
+// .portfolio{
+//     text-align: center;
+// }
+
+#pocket-dudes-header, #haiku-header{
+    margin-left: 45vw;
+}
+
+#movie-header{
+    margin-left: 46vw;
+}
+
+.player{
+    margin-left: 30vw;
+    margin-top: 5vh;
+    filter:url('#drop-shadow');
+
+}
+
+a{
+    display: inline-block;
+    position: absolute;
+    border-radius: 25vw;
+    width: 6vw;
+    height: 4vh;
+    text-align: center;
+    background-color: #5550bd51;
+    text-decoration: none;
+    color: black;
+    
+}
+
+.frontend{
+    margin-left: 40vw;
+
+}
+
+.backend{
+    margin-left: 55vw;
+}
+
+#movie-rails-github{
+    margin-left: 46.8vw;
+}
