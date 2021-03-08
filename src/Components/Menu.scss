@@ -9,8 +9,6 @@ body{
 }
   
 .menu{
-    // font-family: 'Barlow', sans-serif;
-    // font-family: 'Questrial', sans-serif;
     text-align: center;
     margin: 0 auto;
     margin-top: 5vh;
@@ -29,7 +27,7 @@ body{
     // box-shadow: 5px 10px #4f4f4f79;
     border-radius: 50% 50% 50% 50% / 50% 50% 50% 50%;
     outline: 1px solid transparent;
-  filter:url('#drop-shadow');
+    filter:url('#drop-shadow');
 
   }
 
@@ -70,6 +68,7 @@ body{
   span{
     display: inline-block;
     margin-top: 5vh;
+    
   }
   // #portfolio{
   //   background-image: linear-gradient(-200deg, rgb(218, 137, 39) 20%, #470ca7 100%);

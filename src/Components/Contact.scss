@@ -1,0 +1,19 @@
+
+
+.contact{
+    // font-family: 'Barlow', sans-serif;
+    // font-family: 'Questrial', sans-serif;
+    text-align: center;
+    margin: 0 auto;
+    margin-top: 5vh;
+  }
+.gooey{
+    filter:url('#drop-shadow');
+}
+
+.contact a {
+    display: inline-block;
+    text-decoration: none;
+    color: rgb(46, 45, 45);
+    margin-top: 5vh;
+}
