@@ -16,8 +16,20 @@
     filter:url('#drop-shadow');
 
 }
+.description{
+    padding: 2vh;
+    display: inline-block;
+    width: 38vw;
+    margin-left: 30vw;
+    text-align: center;
+    margin-top: 5vh;
+    border-radius: 25px;
+    background-color: rgba(48, 84, 182, 0.411);
+}
+
 
 .portfolio a{
+    font-size: 1.3em;
     display: inline-block;
     position: absolute;
     border-radius: 25vw;
