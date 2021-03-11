@@ -5,11 +5,11 @@ export default function Home(){
     return(
         <>
         <div className='home'>
+            
+            <Link to={"/menu"}>
+                <span id='title'>Full-stack Web Developer</span>
+            </Link><br/>
 
-                <Link to={"/menu"}>
-                    <span id='title'>Full-stack Web Developer</span>
-                </Link><br/>
-                
             <img src='https://i.ibb.co/xCjkvyq/Profile-Pics.jpg' alt='Mary Dick' className='profile-pic'></img>
                 <p className='header'>Mary Dick</p>
 

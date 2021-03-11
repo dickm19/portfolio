@@ -18,6 +18,9 @@ export default function Menu () {
     return(
         <>
             <div className='menu'>
+                <Link id='menu' to={"/"}>
+                    <span className='back' style={{marginTop: 1 + 'vh', marginLeft: 1 + 'vh', color: 'black'}}>Back</span>
+                </Link>
                 
                 <Link className='gooey' id='about' to={"/about"}>
                     <span >About</span>
