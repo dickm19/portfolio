@@ -10,8 +10,8 @@ export default function Portfolio(){
             </Link>
             <h3 id='pocket-dudes-header'>Pocket Dudes</h3>
             
-            <a className='frontend' href='https://github.com/dickm19/pocket-dudes-frontend 'target="_blank">Frontend</a>
-            <a className='backend' href='https://github.com/dickm19/pocket-dudes-backend' target="_blank">Backend</a><br/>
+            <a className='frontend' href='https://github.com/dickm19/pocket-dudes-frontend 'target="_blank" rel="noreferrer">Frontend</a>
+            <a className='backend' href='https://github.com/dickm19/pocket-dudes-backend' target="_blank" rel="noreferrer">Backend</a><br/>
             <ReactPlayer
                 url="https://youtu.be/n54YuzA0Bqk"
                 id='pocket-dudes-demo'
@@ -23,8 +23,8 @@ export default function Portfolio(){
             <text className='description'>Pocket Dudes is a virtual pet-adoption app where the user can play, earn points, shop, and interact with their pet. Pocket Dudes was built on a Ruby on Rails API backend with a React and React-Redux frontend, with custom CSS styling.
             </text>
             <h3 id='haiku-header'>Haiku Twitter</h3>
-            <a className='frontend' href='https://github.com/dickm19/haiku-twitter-frontend' target="_blank"> Frontend</a>
-            <a className='backend'href='https://github.com/dickm19/haiku-twitter-api-backend' target="_blank"> Backend</a><br/>
+            <a className='frontend' href='https://github.com/dickm19/haiku-twitter-frontend' target="_blank" rel="noreferrer"> Frontend</a>
+            <a className='backend'href='https://github.com/dickm19/haiku-twitter-api-backend' target="_blank" rel="noreferrer"> Backend</a><br/>
             <ReactPlayer
                 url="https://youtu.be/rTtrQBAWrDM"
                 id='haiku-twitter-demo'
@@ -36,7 +36,7 @@ export default function Portfolio(){
             <text className='description'>Haiku Twitter is a haiku-based personal blogging social media application for everyday poets. It was built on a Ruby on Rails API backend with a React.js frontend and custom CSS styling. It also utilizes the Syllable npm package to verify the syllable count of a given haiku line.
             </text>
             <h3 id='movie-header'>MovieRails</h3>
-            <a id='movie-rails-github' href='https://github.com/dickm19/movieRails' target="_blank"> GitHub</a><br/>
+            <a id='movie-rails-github' href='https://github.com/dickm19/movieRails' target="_blank" rel="noreferrer"> GitHub</a><br/>
             <ReactPlayer
                 url="https://youtu.be/jEa6omalgQc"
                 id='movie-rails-demo'
