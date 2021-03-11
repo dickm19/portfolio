@@ -3,13 +3,17 @@ import { Link } from 'react-router-dom'
 export default function Home(){
     
     return(
+        <>
         <div className='home'>
 
-            <p className='header'>Mary Dick</p><br/>
+                <Link to={"/menu"}>
+                    <span id='title'>Full-stack Web Developer</span>
+                </Link><br/>
+                
+            <img src='https://i.ibb.co/xCjkvyq/Profile-Pics.jpg' alt='Mary Dick' className='profile-pic'></img>
+                <p className='header'>Mary Dick</p>
 
-            <Link to={"/menu"}>
-                <span className='title'>Full-stack Web Developer</span>
-            </Link><br/>
+        </div>
             <svg>
                 <defs>
                     <filter id="drop-shadow">
@@ -25,7 +29,7 @@ export default function Home(){
                     </filter>
                 </defs>
             </svg>
-        </div>
+        </>
     )
 }
 

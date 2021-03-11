@@ -14,9 +14,7 @@ export default function About(){
             <p className='info'>
                 Full-stack software engineer with experience in Ruby and JavaScript frameworks, known for curiosity and a continuous drive to broaden my technical skills. I thrive in both self-governed and collaborative environments and take pride in finding elegant solutions to complex user problems.<br/><br/>
 
-                My passion for programming began in my high school’s robotics class where, as the only girl in the class of 16 students, I quickly picked up the skill and swiftly rose to the top of the male-dominated classroom. Although this experience was isolating at times, it was a fitting first exposure to a now-familiar circumstance as a female in tech and ultimately sparked an enthusiasm for technology that I had not previously possessed. <br/><br/>
-
-                I graduated from Flatiron School's immersive Software Engineering bootcamp in January 2021 and am proud to have completed the program without repeating a single phase, and only repeating one code challenge throughout the rigorous program.
+                I graduated from Flatiron School's immersive Software Engineering bootcamp in January 2021.
             </p>
 
             <div className='blob' id='blob1'/>
